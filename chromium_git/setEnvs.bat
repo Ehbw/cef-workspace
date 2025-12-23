@@ -14,4 +14,4 @@ set DEPOT_TOOLS_DIR=%CURRENT_DIR%..\depot_tools
 REM CEF/Chromium specific data
 
 set CEF_URL=https://github.com/Ehbw/cef.git
-set CEF_CHECKOUT=cfx-m140
+set CEF_CHECKOUT=cfx-m144
