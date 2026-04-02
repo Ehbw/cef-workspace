@@ -2,7 +2,7 @@
 
 call setEnvs.bat
 
-python3 ..\automate\automate-git.py^
+python ..\automate\automate-git.py^
  --url=%CEF_URL%^
  --checkout=%CEF_CHECKOUT%^
  --download-dir=%DOWNLOAD_DIR%^
