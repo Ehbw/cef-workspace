@@ -1,17 +1,9 @@
 @echo off
-
+setlocal
+set DEPOT_TOOLS_UPDATE=0
+set DEPOT_TOOLS_WIN_TOOLCHAIN=0
 call setEnvs.bat
 
-python ../automate/automate-git.py^
- --url=%CEF_URL%^
- --checkout=%CEF_CHECKOUT%^
- --download-dir=%DOWNLOAD_DIR%^
- --depot-tools-dir=%DEPOT_TOOLS_DIR%^
- --minimal-distrib-only^
- --x64-build^
- --no-cef-update^
- --no-debug-build^
- --force-build^
- --no-update^
- --no-depot-tools-update^
- --with-pgo-profiles %*
+pushd chromium\src
+call autoninja -C out/Release_GN_x64 libcef bootstrap bootstrapc
+popd 

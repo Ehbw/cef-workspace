@@ -1,12 +1,16 @@
 ### CEF Workspace
 
-Premade repo to quickly build CEF and make changes. Loosely based off of citizenfx's [cef-build](https://github.com/CitizenFX/cef-build/)
+A repository for local development and CI building for CFX's [CEF](https://github.com/CitizenFX/cef.git).
 
-### Setup
+### Local Setup
 
-Add cef-workspace/depot_tools to path 
+Clone cef-workspace with submodules.
 
-e.g.
+Add `depot_tools` to your env PATH e.g.
 ```cmd
-set PATH=%PATH%;C:/cef-workspace/depot_tools/
+set PATH = G:/cef-workspace/depot_tools/;%PATH%
 ```
+
+
+
+
